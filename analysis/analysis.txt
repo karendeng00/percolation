@@ -1,0 +1,65 @@
+Your name
+Your netid
+
+Copy/Paste results from PercolationStats using PercolationDFS
+simulation data for 20 trials
+
+grid	mean	stddev	time
+100	0.593	0.014	2.238
+200	0.591	0.010	24.299
+400	0.590	0.006	277.897
+
+
+Copy/Paste results from PercolationStats using PercolationDFSFast
+
+simulation data for 20 trials
+grid	mean	stddev	time
+100	0.593	0.014	0.224
+200	0.591	0.010	0.278
+400	0.590	0.006	1.586
+800	0.594	0.004	9.697
+
+Copy/Paste results from PercolationStats using PercolationBFS
+
+simulation data for 20 trials
+grid	mean	stddev	time
+100	0.593	0.014	0.425
+200	0.591	0.010	0.638
+400	0.590	0.006	2.525
+800	0.594	0.004	11.167
+1600	0.592	0.002	70.664
+
+Copy/Paste results from PercolationStats using PercolationUF 
+with the QuickUWPC UnionFind implementation.
+
+simulation data for 20 trials
+grid	mean	stddev	time
+100	0.593	0.014	0.320
+200	0.591	0.010	0.424
+400	0.590	0.006	1.767
+800	0.594	0.004	11.391
+1600	0.592	0.002	50.448
+
+1. How does doubling the grid size affect running time (keeping # trials fixed)
+
+Doubling the grid size will increase the running time because in the example above when 100 cell grid
+was doubled to a 200 cell grid, the time increased from 0.320 seconds to 0.424 seconds. 
+
+2. How does doubling the number of trials affect running time.
+
+simulation data for 40 trials
+grid	mean	stddev	time
+100	0.594	0.015	0.662
+200	0.591	0.009	0.967
+400	0.591	0.005	5.051
+800	0.593	0.004	26.280
+
+Doubling the number of trials doubles the time because when 40 trials are run, the time increases from 
+0.320 seconds to 0.662 seconds. 
+
+3. Estimate the largest grid size you can run in 24 hours with 20 trials. Explain your reasoning.
+24 hours is equivalent to 86,400 seconds in a day. Whenever the grid doubles in size, the time also increases
+and multiplies by 5. Therefore if you were to take 0.224 * 5 ^n = 86400 and solve for n 
+the size of the grid would be doubling the grid around 8 times which means. 100 * 2 ^ 8 which equals a 
+grid size of 256,000 cells. 
+

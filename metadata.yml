@@ -1,0 +1,12 @@
+---
+:id: 12052544
+:submitters:
+- :name: Karen Deng
+  :email: karen.deng@duke.edu
+:created_at: !ruby/object:ActiveSupport::TimeWithZone
+  utc: 2018-12-06 09:22:46.005295000 Z
+  zone: !ruby/object:ActiveSupport::TimeZone
+    name: America/Los_Angeles
+  time: 2018-12-06 01:22:46.005295000 Z
+:status: processed
+:score: 23.0
